@@ -1,20 +1,6 @@
 USE codeup_test_db;
 TRUNCATE albums;
 
-# DROP TABLE IF EXISTS albums;
-
-# CREATE TABLE IF NOT EXISTS albums
-# -- only column that has to been NOT NULL is the id since it's the primary key
-# (
-#     id           INT UNSIGNED NOT NULL AUTO_INCREMENT,
-#     artist       VARCHAR(50)  NOT NULL,
-#     name         VARCHAR(100)  NOT NULL,
-#     release_date INT          NOT NULL,
-#     sales        DOUBLE       NOT NULL,
-#     genre        VARCHAR(50)  NOT NULL,
-#     PRIMARY KEY (id)
-# );
-
 INSERT INTO albums(artist, name, release_date, sales, genre)
 VALUES
        ('Michael Jackson', 'Thriller', 1982, 47.3,'Pop, post-disco, funk, rock'),
