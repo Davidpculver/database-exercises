@@ -1,4 +1,5 @@
 USE codeup_test_db;
+TRUNCATE albums;
 
 # DROP TABLE IF EXISTS albums;
 
