@@ -22,3 +22,5 @@ SELECT 'Rock albums' AS 'Genre: Rock';
 # the word rock is not case sensitive. Enter 'rock' and get the same results.
 SELECT * FROM albums WHERE genre = 'Rock';
 
+SELECT * FROM albums WHERE artist IN ('Michael Jackson', 'Elton John', 'Metallica');
+
