@@ -23,4 +23,3 @@ SELECT 'Rock albums' AS 'Genre: Rock';
 SELECT * FROM albums WHERE genre = 'Rock';
 
 SELECT * FROM albums WHERE artist IN ('Michael Jackson', 'Elton John', 'Metallica');
-
