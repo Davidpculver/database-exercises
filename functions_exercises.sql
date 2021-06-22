@@ -12,4 +12,4 @@ SELECT * FROM employees WHERE month(birth_date) = '12' AND day(birth_date) = '25
 
 SELECT DATEDIFF(NOW(), hire_date) FROM employees WHERE month(birth_date) = '12' AND day(birth_date) = '25' AND hire_date LIKE '199%' ORDER BY hire_date desc;
 
-
+SELECT *, DATEDIFF(NOW(), hire_date) FROM employees WHERE month(birth_date) = '12' AND day(birth_date) = '25' AND hire_date LIKE '199%' ORDER BY hire_date;
