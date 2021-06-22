@@ -14,6 +14,9 @@ CREATE TABLE albums
     PRIMARY KEY (id)
 );
 
+-- Added from the index's exercise a unique key so artist and album cannot be duplicated.
+ALTER TABLE albums ADD UNIQUE artist_and_name (artist, name);
+
 -- how to add to our query. Values have to correspond to our table data column
 -- INSERT INTO albums(artist, name, release_date, sales, genre)
 -- VALUES('Taylor Swift', 'Fearless', 2008, 10000000, 'Country');
