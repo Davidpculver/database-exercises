@@ -63,5 +63,5 @@ FROM employees e
          JOIN dept_manager dm on e.emp_no = dm.emp_no
          JOIN departments d on dm.dept_no = d.dept_no
          JOIN salaries s on s.emp_no = e.emp_no
-WHERE dm.to_date > now() AND s.to_date > now() ORDER BY salary;
+WHERE dm.to_date > now() AND s.to_date > now() ORDER BY salary desc;
 
